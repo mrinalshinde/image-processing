@@ -1,0 +1,15 @@
+A=imread('histogram equalization.jpg');
+B=rgb2gray(A);
+C=histeq(B);
+subplot(2,2,1);
+imshow(B);
+title('Original image');
+subplot(2,2,2);
+imshow(C);
+title('Histogram equalization');
+subplot(2,2,3);
+imhist(B);
+title('Histogram of original image');
+subplot(2,2,4);
+imhist(C);
+title('Histogram after doing histogram equalization');
